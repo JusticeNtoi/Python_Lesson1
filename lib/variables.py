@@ -39,6 +39,21 @@ list_variable: list[str] = [
 tuple_variable = (1, 0)
 tuple_variable: tuple[int, int] = (1, 0)
 
+# Dictionary 
+dictionary_variable = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
 
 # STRING FUNCTIONS
 # ============================================================
@@ -158,3 +173,43 @@ tuple_variable.count(1)
 
 # Find the index of a specific value in the tuple
 tuple_variable.index(0)
+
+
+# DICTINARY FUNCTIONS
+# ============================================================
+
+# Access a value by key using .get()
+dictionary_variable.get("Feb")  # Output: February
+
+# Add a new key-value pair to the dictionary
+dictionary_variable["NewMonth"] = "NewMonthName"
+
+# Update an existing value
+dictionary_variable["Jan"] = "New January"
+
+# Remove a key-value pair using pop()
+removed_value = dictionary_variable.pop("Mar")
+
+# Check if a key exists in the dictionary
+"Apr" in dictionary_variable
+
+# Loop through keys in the dictionary
+for key in dictionary_variable:
+    print(key, ":", dictionary_variable[key])
+
+# Loop through both keys and values using .items()
+for key, value in dictionary_variable.items():
+    print(f"{key} stands for {value}")
+
+# Get all keys in the dictionary using .keys()
+dictionary_variable.keys()
+
+# Get all values in the dictionary using .values()
+dictionary_variable.values()
+
+# Get the number of key-value pairs in the dictionary using len()
+len(dictionary_variable)
+
+# Clear all key-value pairs in the dictionary using .clear()
+dictionary_variable.clear()
+
