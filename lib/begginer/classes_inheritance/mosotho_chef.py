@@ -11,4 +11,4 @@ class MosothoChef(Chef):
 
     def make_motoho(self):
         """Prints a message indicating that the mosotho chef makes a motoho."""
-        print("The Mosotho Chef makes a Motoho") 
+        print("The Mosotho Chef makes a Motoho")
