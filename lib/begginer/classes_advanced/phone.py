@@ -3,9 +3,9 @@ from item import Item
 
 class Phone(Item):
 
-    def __init__(self, name: str, price: float, quantity=0, broken_phones=0):
+    def __init__(self, broken_phones: int = 0, **kwargs):
         # Call to super function to have access to all attributes / methods
-        super().__init__(name, price, quantity)
+        super().__init__(**kwargs)
         # Run validations on received arguments
         assert (
             broken_phones >= 0

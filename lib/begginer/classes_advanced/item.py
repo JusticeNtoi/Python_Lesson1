@@ -5,7 +5,7 @@ class Item:
     pay_rate = 0.8
     all = []
 
-    def __init__(self, name: str, price: float, quantity=0):
+    def __init__(self, name: str, price: float, quantity: int = 0):
         # Run validations on received arguments
         assert price >= 0, f"Price {price} is less than 0"
         assert quantity >= 0, f"Quantity {quantity} is less than 0"
